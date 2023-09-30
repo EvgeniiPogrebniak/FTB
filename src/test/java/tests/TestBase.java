@@ -11,11 +11,17 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class TestBase {
     LoginPage LoginPage = new LoginPage();
-    static String baseURL;
-
+    static String baseUrl = "http://192.168.40.100:8046";
+    String agentUsername = "Mike";
+    String agentPassword = "mike123";
+    String adminUsername = "John";
+    String adminPassword = "john123";
+    String wrongCasePassword = "MiKe123";
+    String agentUsernameSpace = "Mike ";
+    String allertMessage = "Invalid username and/or password.";
     @BeforeAll
     static void BeforeAll() {
-        Configuration.baseUrl = "http://192.168.40.100:8046";
+        Configuration.baseUrl = baseUrl;
     }
 
     @BeforeEach

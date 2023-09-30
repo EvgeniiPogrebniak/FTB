@@ -6,16 +6,6 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
 public class LoginForm extends TestBase {
-
-
-    String allertMessage = "Invalid username and/or password.";
-    String agentUsername = "Mike";
-    String agentPassword = "mike123";
-    String adminUsername = "John";
-    String adminPassword = "john123";
-    String wrongCasePassword = "MiKe123";
-    String agentUsernameSpace = "Mike ";
-
     @Test
     void agentLoginSuccessful() {
         /*
