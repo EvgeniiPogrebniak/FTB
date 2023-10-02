@@ -1,4 +1,4 @@
-package pages;
+package at.gui.ftb.pages;
 
 import static com.codeborne.selenide.Selenide.$;
 

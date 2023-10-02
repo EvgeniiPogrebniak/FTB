@@ -1,9 +1,9 @@
-package tests;
+package at.gui.ftb.tests;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import pages.LoginPage;
+import at.gui.ftb.pages.LoginPage;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;

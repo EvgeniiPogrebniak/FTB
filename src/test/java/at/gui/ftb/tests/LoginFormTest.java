@@ -1,11 +1,11 @@
-package tests;
+package at.gui.ftb.tests;
 
 import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
-public class LoginForm extends TestBase {
+public class LoginFormTest extends TestBase {
     @Test
     void agentLoginSuccessful() {
         /*
@@ -50,6 +50,7 @@ public class LoginForm extends TestBase {
 // Assert
         $("#spUsername").shouldHave(text(adminUsername));
         $("#aAircrafts").shouldBe(visible);
+        $("#aAirports").shouldBe(visible);
     }
 
     @Test
