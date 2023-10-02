@@ -9,6 +9,8 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
+// Это у меня тестовые данные
+
 public class TestBase {
     LoginPage LoginPage = new LoginPage();
     static String baseUrl = "http://192.168.40.100:8046";
